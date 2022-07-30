@@ -1,50 +1,19 @@
 <app-menu></app-menu>
-<div class="grid">
-  <div
-    class="col-6 surface-700 w-6 h-10rem p-3 flex align-items-center justify-content-center"
-  >
-    <button
-      pButton
-      pRipple
-      type="button"
-      label="Primary"
-      class="p-button-outlined p-button-rounded p-button-lg"
-    ></button>
-  </div>
-
-  <div
-    class="col-6 bg-blue-600 w-6 h-10rem p-3 flex align-items-center justify-content-center"
-  >
-    <button
-      pButton
-      pRipple
-      type="button"
-      label="Primary"
-      class="p-button-outlined p-button-rounded p-button-lg"
-    ></button>
-  </div>
-
-  <div
-    class="col-6 bg-green-900 w-6 h-10rem p-3 flex align-items-center justify-content-center"
-  >
-    <button
-      pButton
-      pRipple
-      type="button"
-      label="Primary"
-      class="p-button-outlined p-button-rounded p-button-lg"
-    ></button>
-  </div>
-
-  <div
-    class="col-6 bg-pink-700 w-6 h-10rem p-3 flex align-items-center justify-content-center"
-  >
-    <button
-      pButton
-      pRipple
-      type="button"
-      label="Primary"
-      class="p-button-outlined p-button-rounded p-button-lg"
-    ></button>
-  </div>
+<div class="grid p-3">
+  <app-homepage-nav-buttons
+    class="col-12 bg-blue-700 w-full sm:w-6 h-10rem sm:h-20rem flex align-items-center justify-content-center border-solid border-white"
+    [labelName]="'About Me'"
+  ></app-homepage-nav-buttons>
+  <app-homepage-nav-buttons
+    class="col-12 bg-blue-700 w-full sm:w-6 h-10rem sm:h-20rem flex align-items-center justify-content-center border-solid border-white"
+    [labelName]="'Portfolio'"
+  ></app-homepage-nav-buttons>
+  <app-homepage-nav-buttons
+    class="col-12 bg-blue-700 w-full sm:w-6 h-10rem sm:h-20rem flex align-items-center justify-content-center border-solid border-white"
+    [labelName]="'Resume'"
+  ></app-homepage-nav-buttons>
+  <app-homepage-nav-buttons
+    class="col-12 bg-blue-700 w-full sm:w-6 h-10rem sm:h-20rem flex align-items-center justify-content-center border-solid border-white"
+    [labelName]="'Contact'"
+  ></app-homepage-nav-buttons>
 </div>
