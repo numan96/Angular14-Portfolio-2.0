@@ -13,10 +13,26 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'About Me', icon: 'pi pi-fw pi-info' },
-      { label: 'Projects', icon: 'pi pi-fw pi-code' },
-      { label: 'Resume', icon: 'pi pi-fw pi-briefcase' },
-      { label: 'Contact', icon: 'pi pi-fw pi-map-marker' },
+      {
+        label: 'About Me',
+        icon: 'pi pi-fw pi-info',
+        routerLink: '/about-me',
+      },
+      {
+        label: 'Portfolio',
+        icon: 'pi pi-fw pi-code',
+        routerLink: '/portfolio',
+      },
+      {
+        label: 'Resume',
+        icon: 'pi pi-fw pi-briefcase',
+        routerLink: '/resume',
+      },
+      {
+        label: 'Contact',
+        icon: 'pi pi-fw pi-map-marker',
+        routerLink: '/contact',
+      },
     ];
   }
 }

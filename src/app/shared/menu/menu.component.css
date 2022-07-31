@@ -3,3 +3,8 @@
 
   min-width: 140px;
 }
+
+:host ::ng-deep .p-menuitem-link-active {
+
+  font-weight: 700;
+}
