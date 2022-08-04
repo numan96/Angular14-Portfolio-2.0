@@ -1,0 +1,4 @@
+:host ::ng-deep button:hover {
+  background-color:red;
+  transition: 0.7s;
+}

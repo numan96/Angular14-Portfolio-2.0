@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./homepage-nav-buttons.component.css'],
 })
 export class HomepageNavButtonsComponent implements OnInit {
-  @Input() labelName = '';
+  @Input() labelName: string[] = [];
+
   constructor() {}
 
   ngOnInit() {}

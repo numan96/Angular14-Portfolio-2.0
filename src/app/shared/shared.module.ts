@@ -4,8 +4,8 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { ToolbarModule } from 'primeng/toolbar';
-import { HomepageNavButtonsComponent } from './homepage-nav-buttons/homepage-nav-buttons.component';
 import { ButtonModule } from 'primeng/button';
+import { HomepageNavButtonsComponent } from './homepage-nav-buttons/homepage-nav-buttons.component';
 @NgModule({
   imports: [
     CommonModule,
