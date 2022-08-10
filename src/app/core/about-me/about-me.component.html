@@ -1,3 +1,33 @@
-<p>
-  about-me works!
-</p>
+<h1
+  class="text-center align-items-center align-content-center align-self-center"
+>
+  About Me
+</h1>
+<div class="grid">
+  <div class="flex col-6 align-items-center justify-content-center w-5 sm:w-8">
+    <p-accordion>
+      <p-accordionTab>
+        <ng-template pTemplate="header">Header Content</ng-template>
+        <ng-template pTemplate="content"
+          >Body Content</ng-template
+        ></p-accordionTab
+      >
+      <p-accordionTab>
+        <ng-template pTemplate="header">Header Content</ng-template>
+        <ng-template pTemplate="content"
+          >Body Content</ng-template
+        ></p-accordionTab
+      >
+      <p-accordionTab>
+        <ng-template pTemplate="header">Header Content</ng-template>
+        <ng-template pTemplate="content"
+          >Body Content</ng-template
+        ></p-accordionTab
+      >
+    </p-accordion>
+  </div>
+  <p-image
+    class="col-6 flex vertical-align-middle w-5 sm:w-2"
+    src="/assets/aboutme.png"
+  ></p-image>
+</div>

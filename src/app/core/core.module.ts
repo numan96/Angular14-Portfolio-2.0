@@ -7,9 +7,18 @@ import { PortfolioDetailComponent } from './portfolio/portfolio-detail/portfolio
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
+import { ImageModule } from 'primeng/image';
+import { AccordionModule } from 'primeng/accordion';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 @NgModule({
-  imports: [CommonModule, SharedModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    ImageModule,
+    AccordionModule,
+    PdfViewerModule,
+  ],
   declarations: [
     AboutMeComponent,
     ContactComponent,
