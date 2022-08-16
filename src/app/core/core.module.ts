@@ -9,15 +9,32 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { ImageModule } from 'primeng/image';
 import { AccordionModule } from 'primeng/accordion';
-
+import { CheckboxModule } from 'primeng/checkbox';
+import { InputTextModule } from 'primeng/inputtext';
+import { GMapModule } from 'primeng/gmap';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { ButtonModule } from 'primeng/button';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ToastModule } from 'primeng/toast';
+import { TooltipModule } from 'primeng/tooltip';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     SharedModule,
+    ReactiveFormsModule,
     ImageModule,
     AccordionModule,
     PdfViewerModule,
+    CheckboxModule,
+    InputTextModule,
+    ButtonModule,
+    InputTextareaModule,
+    ToastModule,
+    GMapModule,
+    TooltipModule,
   ],
   declarations: [
     AboutMeComponent,
