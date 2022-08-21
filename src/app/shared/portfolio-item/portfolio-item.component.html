@@ -5,14 +5,13 @@
   >
     <p-card
       [header]="project.projectName"
-      [style]="{ width: '' }"
-      styleClass="p-card-shadow border-2 border-primary min-h-full w-full"
+      styleClass="p-card-shadow border-2 border-primary min-h-full"
     >
       <ng-template pTemplate="header">
         <img
           alt="Card"
           [src]="project.projectImages[0]"
-          class="hidden md:flex"
+          class="hidden md:flex w-auto ml-auto mr-auto mt-3"
           style="height: 173.73px"
         />
       </ng-template>
@@ -33,6 +32,7 @@
             icon="pi pi-angle-right"
             iconPos="right"
             styleClass="flex w-full"
+            [routerLink]="['/portfolio', project.projectSlug]"
           ></p-button>
         </div>
       </ng-template>

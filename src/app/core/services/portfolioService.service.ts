@@ -119,9 +119,9 @@ export class PortfolioService {
         'Firebase',
       ],
       [
+        '/assets/CourseProject/ngproject3.png',
         '/assets/CourseProject/ngproject1.png',
         '/assets/CourseProject/ngproject2.png',
-        '/assets/CourseProject/ngproject3.png',
         '/assets/CourseProject/ngproject4.png',
         '/assets/CourseProject/ngproject5.png',
       ],
@@ -263,6 +263,6 @@ export class PortfolioService {
     var project = this.projects.find((s) => {
       return s.projectSlug === id;
     });
-    return project;
+    return project as Project;
   }
 }

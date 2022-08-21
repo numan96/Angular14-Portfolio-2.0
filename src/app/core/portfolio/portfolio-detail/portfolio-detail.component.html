@@ -1,3 +1,24 @@
 <p>
-  portfolio-detail works!
+  {{ project.projectName }}
 </p>
+<p-galleria
+  [value]="project.projectImages"
+  [containerStyle]="{ width: 'auto' }"
+  [showThumbnails]="false"
+  [showIndicators]="true"
+  [showIndicatorsOnItem]="true"
+>
+  <ng-template pTemplate="item" let-item>
+    <img
+      [src]="item"
+      class="w-full sm:w-auto h-15rem sm:h-30rem"
+      style="display: block"
+    />
+  </ng-template>
+</p-galleria>
+
+<p-tabView>
+  <p-tabPanel header="Header 1"> Content 1 </p-tabPanel>
+  <p-tabPanel header="Header 2"> Content 2 </p-tabPanel>
+  <p-tabPanel header="Header 3"> Content 3 </p-tabPanel>
+</p-tabView>

@@ -17,6 +17,8 @@ import { ButtonModule } from 'primeng/button';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ToastModule } from 'primeng/toast';
 import { TooltipModule } from 'primeng/tooltip';
+import { GalleriaModule } from 'primeng/galleria';
+import { TabViewModule } from 'primeng/tabview';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioService } from './services/portfolioService.service';
@@ -36,6 +38,8 @@ import { PortfolioService } from './services/portfolioService.service';
     ToastModule,
     GMapModule,
     TooltipModule,
+    GalleriaModule,
+    TabViewModule,
   ],
   declarations: [
     AboutMeComponent,
