@@ -19,6 +19,7 @@ import { ToastModule } from 'primeng/toast';
 import { TooltipModule } from 'primeng/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PortfolioService } from './services/portfolioService.service';
 @NgModule({
   imports: [
     CommonModule,
@@ -52,5 +53,6 @@ import { HttpClientModule } from '@angular/common/http';
     ResumeComponent,
     HomeComponent,
   ],
+  providers: [PortfolioService],
 })
 export class CoreModule {}

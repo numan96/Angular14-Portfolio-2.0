@@ -1,0 +1,41 @@
+<div class="grid">
+  <div
+    class="col-12 sm:col-12 md:col-6 xl:col-3"
+    *ngFor="let project of projects"
+  >
+    <p-card
+      [header]="project.projectName"
+      [style]="{ width: '' }"
+      styleClass="p-card-shadow border-2 border-primary min-h-full w-full"
+    >
+      <ng-template pTemplate="header">
+        <img
+          alt="Card"
+          [src]="project.projectImages[0]"
+          class="hidden md:flex"
+          style="height: 173.73px"
+        />
+      </ng-template>
+      <ng-template pTemplate="content">
+        <div class="h-5rem">
+          <p-chip
+            *ngFor="let projectTech of project.projectTech | slice: 0:5"
+            [label]="projectTech"
+            styleClass="mr-1 mb-1"
+          ></p-chip>
+        </div>
+      </ng-template>
+
+      <ng-template pTemplate="footer">
+        <div class="h-3rem">
+          <p-button
+            label="View Project"
+            icon="pi pi-angle-right"
+            iconPos="right"
+            styleClass="flex w-full"
+          ></p-button>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+</div>
