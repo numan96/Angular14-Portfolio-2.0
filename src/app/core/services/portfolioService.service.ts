@@ -5,6 +5,23 @@ import { Project } from 'src/app/shared/portfolio-item/project.model';
 export class PortfolioService {
   projects: Project[] = [
     new Project(
+      'portfolio-v1',
+      'Angular Portfolio v1',
+      'Add description here',
+      ['Angular 11', 'Angular Material', 'TypeScript', 'CSS', 'HTML'],
+      [
+        '/assets/PortfolioV1/ngportfolio1.png',
+        '/assets/PortfolioV1/ngportfolio2.png',
+        '/assets/PortfolioV1/ngportfolio3.png',
+        '/assets/PortfolioV1/ngportfolio4.png',
+      ],
+      [],
+      'https://github.com/numan96/Angular-Portfolio-1.0',
+      '',
+      { user: '', password: '' }
+    ),
+
+    new Project(
       'fitness-tracker',
       'Angular Fitness Tracker',
       'This is a fitness tracking application where users can sign up, login and start exercises. They choose from a set of exercises fetched from a server I started, users can cancel the exercise if they want and can view past exercises (completed or cancelled early) and we can even filter/sort these exercises.',
