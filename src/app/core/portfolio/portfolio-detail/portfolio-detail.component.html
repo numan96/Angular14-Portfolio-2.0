@@ -1,6 +1,8 @@
-<p>
+<h1
+  class="text-center align-items-center align-content-center align-self-center"
+>
   {{ project.projectName }}
-</p>
+</h1>
 <p-galleria
   [value]="project.projectImages"
   [containerStyle]="{ width: 'auto' }"
@@ -11,14 +13,63 @@
   <ng-template pTemplate="item" let-item>
     <img
       [src]="item"
-      class="w-full sm:w-auto h-15rem sm:h-30rem"
-      style="display: block"
+      class="w-auto max-w-full sm:w-auto h-15rem sm:h-30rem"
+      style="display: flex"
     />
   </ng-template>
 </p-galleria>
 
+<div class="grid p-3">
+  <div
+    *ngIf="project.projectGit !== ''"
+    [ngClass]="{
+      'w-6': project.projectGit !== '' && project.projectLink !== ''
+    }"
+    class="col-12 h-5rem flex align-items-center justify-content-end border-solid border-white"
+  >
+    <button
+      pButton
+      pRipple
+      type="button"
+      (click)="openGithub()"
+      label="GitHub"
+      class="p-button-raised p-button-lg w-full h-full"
+    ></button>
+  </div>
+
+  <div
+    *ngIf="project.projectLink !== ''"
+    [ngClass]="{
+      'w-6': project.projectGit !== '' && project.projectLink !== ''
+    }"
+    class="col-12 h-5rem flex align-items-center justify-content-start border-solid border-white"
+  >
+    <button
+      pButton
+      pRipple
+      type="button"
+      (click)="openLiveWebsite()"
+      label="Live Website"
+      class="p-button-raised p-button-lg w-full h-full"
+    ></button>
+  </div>
+</div>
+
 <p-tabView>
-  <p-tabPanel header="Header 1"> Content 1 </p-tabPanel>
-  <p-tabPanel header="Header 2"> Content 2 </p-tabPanel>
-  <p-tabPanel header="Header 3"> Content 3 </p-tabPanel>
+  <p-tabPanel header="About Project">
+    {{ project.projectDescription }}
+  </p-tabPanel>
+  <p-tabPanel header="Technologies Used">
+    <p-chip
+      *ngFor="let projectTech of project.projectTech"
+      [label]="projectTech"
+      styleClass="mr-1 mb-1"
+    ></p-chip>
+  </p-tabPanel>
+  <p-tabPanel *ngIf="projectCredentials.user !== ''" header="Login Credentials">
+    <p class="font-bold">User:</p>
+    {{ projectCredentials.user }}
+    <p class="font-bold">Password:</p>
+    {{ projectCredentials.password }}
+  </p-tabPanel>
 </p-tabView>

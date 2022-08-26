@@ -15,7 +15,7 @@ export class Project {
 
   public projectGit?: string;
 
-  public projectLink: string;
+  public projectLink?: string;
 
   public projectCredentials?: Credentials;
 

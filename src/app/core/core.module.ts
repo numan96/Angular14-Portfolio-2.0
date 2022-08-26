@@ -19,6 +19,7 @@ import { ToastModule } from 'primeng/toast';
 import { TooltipModule } from 'primeng/tooltip';
 import { GalleriaModule } from 'primeng/galleria';
 import { TabViewModule } from 'primeng/tabview';
+import { ChipModule } from 'primeng/chip';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioService } from './services/portfolioService.service';
@@ -40,6 +41,7 @@ import { PortfolioService } from './services/portfolioService.service';
     TooltipModule,
     GalleriaModule,
     TabViewModule,
+    ChipModule,
   ],
   declarations: [
     AboutMeComponent,
