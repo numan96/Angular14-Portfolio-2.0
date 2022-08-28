@@ -18,8 +18,11 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ToastModule } from 'primeng/toast';
 import { TooltipModule } from 'primeng/tooltip';
 import { GalleriaModule } from 'primeng/galleria';
+import { TimelineModule } from 'primeng/timeline';
 import { TabViewModule } from 'primeng/tabview';
 import { ChipModule } from 'primeng/chip';
+import { CardModule } from 'primeng/card';
+import { ProgressBarModule } from 'primeng/progressbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioService } from './services/portfolioService.service';
@@ -41,7 +44,10 @@ import { PortfolioService } from './services/portfolioService.service';
     TooltipModule,
     GalleriaModule,
     TabViewModule,
+    ProgressBarModule,
     ChipModule,
+    TimelineModule,
+    CardModule,
   ],
   declarations: [
     AboutMeComponent,

@@ -5,26 +5,156 @@
 </h1>
 <div class="grid">
   <div
-    class="flex col-6 align-items-center justify-content-center w-full sm:w-8"
+    class="flex col-6 align-items-center justify-content-center w-full md:w-8"
   >
-    <p-accordion class="w-8 sm:w5">
+    <p-accordion class="w-full md:w-8">
       <p-accordionTab>
-        <ng-template pTemplate="header">Header Content</ng-template>
+        <ng-template pTemplate="header">Who I Am</ng-template>
         <ng-template pTemplate="content"
-          >Body Content</ng-template
-        ></p-accordionTab
+          >My name is Numan Mumtaz and I'm 26 years old. I'm an aspiring Junior
+          Web Developer based in High Wycombe, Buckinghamshire. I'm always
+          striving to learn and I'm currently open to opportunities.
+        </ng-template></p-accordionTab
       >
+
       <p-accordionTab>
-        <ng-template pTemplate="header">Header Content</ng-template>
-        <ng-template pTemplate="content"
-          >Body Content</ng-template
-        ></p-accordionTab
+        <ng-template pTemplate="header">My Most Used Technologies</ng-template>
+        <ng-template pTemplate="content">
+          HTML<p-progressBar styleClass="mb-3" value="90"></p-progressBar>
+          CSS<p-progressBar styleClass="mb-3" value="90"></p-progressBar>
+          Angular 8+<p-progressBar styleClass="mb-3" value="70"></p-progressBar>
+          TypeScript<p-progressBar styleClass="mb-3" value="70"></p-progressBar>
+          JavaScript<p-progressBar styleClass="mb-3" value="70"></p-progressBar>
+          WordPress<p-progressBar styleClass="mb-3" value="70"></p-progressBar>
+          NgRx<p-progressBar
+            styleClass="mb-3"
+            value="60"
+          ></p-progressBar> </ng-template
+      ></p-accordionTab>
+
+      <p-accordionTab>
+        <ng-template pTemplate="header">My Job History</ng-template>
+        <ng-template pTemplate="content">
+          <p-timeline
+            [value]="events1"
+            align="alternate"
+            styleClass="customized-timeline w-auto"
+          >
+            <ng-template pTemplate="marker" let-event>
+              <span
+                class="custom-marker shadow-2"
+                [style.backgroundColor]="event.color"
+              >
+                <i [ngClass]="event.icon"></i>
+              </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+              <p-card
+                [header]="event.status"
+                [subheader]="event.date"
+                styleClass=""
+              >
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc2 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc3 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc4 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc5 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc6 }}
+                </p>
+              </p-card>
+            </ng-template>
+          </p-timeline>
+        </ng-template></p-accordionTab
       >
+
       <p-accordionTab>
-        <ng-template pTemplate="header">Header Content</ng-template>
-        <ng-template pTemplate="content"
-          >Body Content</ng-template
-        ></p-accordionTab
+        <ng-template pTemplate="header">My Education History</ng-template>
+        <ng-template pTemplate="content">
+          <p-timeline
+            [value]="events2"
+            align="alternate"
+            styleClass="customized-timeline w-auto"
+          >
+            <ng-template pTemplate="marker" let-event>
+              <span
+                class="custom-marker shadow-2"
+                [style.backgroundColor]="event.color"
+              >
+                <i [ngClass]="event.icon"></i>
+              </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+              <p-card
+                [header]="event.status"
+                [subheader]="event.date"
+                styleClass=""
+              >
+                <p class="text-xs lg:text-base text-left font-bold">
+                  {{ event.title1 }}
+                </p>
+
+                <p class="text-xs lg:text-base text-left font-bold">
+                  {{ event.grade }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc2 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc3 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc4 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc5 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc6 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc7 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc8 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc9 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc10 }}
+                </p>
+
+                <br />
+                <p class="text-xs lg:text-base text-left font-bold">
+                  {{ event.title2 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc11 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc12 }}
+                </p>
+                <p class="text-xs lg:text-base text-left">
+                  {{ event.desc13 }}
+                </p>
+              </p-card>
+            </ng-template>
+          </p-timeline>
+        </ng-template></p-accordionTab
       >
     </p-accordion>
   </div>
