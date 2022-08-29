@@ -7,7 +7,7 @@ export class PortfolioService {
     new Project(
       'portfolio-v1',
       'Angular Portfolio v1',
-      'Add description here',
+      'This is my first Portfolio website created with Angular 11, the goal was to highlight my personal and university projects to potential recruiters and employers. It contains pages for my Resume (which contains a PDF viewer to display it), a Portfolio hub and details page which details the projects with links to their Github and/or the live websites. It also contains a Contact page where you can view links to my LinkedIn and GitHub and submit a contact form which is sent to me via email. This was created with PC in mind, however, my current version of this portfolio (Angular Portfolio v2) has been rebuilt from the ground up for mobile first.',
       ['Angular 11', 'Angular Material', 'TypeScript', 'CSS', 'HTML'],
       [
         '/assets/PortfolioV1/ngportfolio1.png',
@@ -24,7 +24,7 @@ export class PortfolioService {
     new Project(
       'fitness-tracker',
       'Angular Fitness Tracker',
-      'This is a fitness tracking application where users can sign up, login and start exercises. They choose from a set of exercises fetched from a server I started, users can cancel the exercise if they want and can view past exercises (completed or cancelled early) and we can even filter/sort these exercises.',
+      'This is a fitness tracking application where users can sign up, login and start exercises. They choose from a set of exercises fetched from Firebase, users can cancel the exercise if they want and can view past exercises (completed or cancelled early and even filter search in any category) and we can even filter/sort these exercises. It uses a Firestore Database to store finished exercises and Authentication uses Firebase Auth. Angular Material component styling is used with a mobile first design in mind. ',
       [
         'Angular 13',
         'Angular Material',
@@ -84,7 +84,7 @@ export class PortfolioService {
     new Project(
       'film-tracker',
       'Angular NgRx Film Tracker',
-      'A film tracking application built using NgRx and TMDB API. All data including authentication by the user was created using Firebase. Users can favourite or set films as watched, also look at film details and search dynamically for any film of their choosing. In my specification before the project, I aimed to allow users to view films and more details without authenticating, once authenticated however, they could add films to their watched lists and favourites list (accessible with the person icon top right of the nav bar) to keep track of which films that might be upcoming they want to watch or to track which films they have watched already (including the date which they have watched them). I also aimed to have a search bar that was in the navigation bar accessable anywhere on the website. I also wished to have a layout for mobile and PC which I achieved. Below are screenshots from an Android device, PC and an iPad.',
+      'A film tracking application built using NgRx and TMDB API. All data including authentication by the user was created using Firebase. Users can favourite or set films as watched, also look at film details and search dynamically for any film of their choosing. In my specification before the project, I aimed to allow users to view films and more details without authenticating, once authenticated however, they could add films to their watched lists and favourites list (accessible with the person icon top right of the nav bar) to keep track of which films that might be upcoming they want to watch or to track which films they have watched already (including the date which they have watched them). I also aimed to have a search bar that was in the navigation bar accessable anywhere on the website. I also wished to have a layout for mobile and PC which I achieved.',
       [
         'Angular 13',
         'Angular Material',
@@ -117,8 +117,8 @@ export class PortfolioService {
 
     new Project(
       'ng-course-project',
-      'Angular Course Project',
-      'A project that allowed me to practice things I have learnt throughout this Angular Complete Guide 2022 Edition course on Udemy. Covering topics such as: Components, Directives, Services, Forms, Http Access, Authentication, Optimizing an Angular App with Modules and Offline Compilation and much more - and in the end: I learnt how to deploy an application! The website implemented NgRx in the end and is a recipe book website, where users can manage recipes (click Manage in the top right once signed in -> Fetch Data) and be able to add ingredients of the recipe to a shopping list and add/edit/delete recipes. The changes to the recipes can be saved in the Manage tab (Save Data) which is updated in the Firebase DB. Users are also able to edit the shopping list by changing quantities and deleting ingredients. For a detailed look at implemented Angular features, please feel free to view the GitHub project below. A link to the Course Completion Certificate can be found on my Resume.',
+      'Angular Course CRUD Project',
+      'A project that allowed me to practice things I have learnt throughout this Angular Complete Guide 2022 Edition course on Udemy. Covering topics such as: Components, Directives, Services, Forms, Http Access, Authentication, Optimizing an Angular App with Modules and Offline Compilation and much more - and in the end: I learnt how to deploy an application! The website implemented NgRx in the end and is a recipe book website, where users can manage recipes (click Manage in the top right once signed in -> Fetch Data) and be able to add ingredients of the recipe to a shopping list and add/edit/delete recipes. The changes to the recipes can be saved in the Manage tab (Save Data) which is updated in the Firebase DB. Users are also able to edit the shopping list by changing quantities and deleting ingredients. For a detailed look at implemented Angular features, please feel free to view the GitHub project. A link to the Course Completion Certificate can be found on my Resume.',
       [
         'Angular 11',
         'Bootstrap',
@@ -144,7 +144,7 @@ export class PortfolioService {
     new Project(
       'vitz-2.0-website',
       'Vitz 2.0 WordPress Website',
-      'Created a new reworked WordPress website that better matched the branding of the business, with the aim of it driving more sales from the websites store. A new product launched simultaneously with the website which we wanted to bring to life with vibrant colours that matched the packaging.',
+      'Created a new reworked WordPress website that better matched the branding of the business, with the aim of it driving more sales from the websites store. A new product launched simultaneously with the website which we wanted to bring to life with vibrant colours that matched the packaging. The website contains a blog, an About Us page and a E-commerce store with a shopping basket, allowing for payments by card. Making the website more interactive was the goal and we achieved that through a more engaging design with alot of videos, images, animations and interactive WordPress components from the editor used (WPBakery). ',
       ['WordPress', 'CSS'],
       [
         '/assets/VitzWebsite2/vitz2-1.png',
@@ -160,7 +160,7 @@ export class PortfolioService {
     new Project(
       'vitz-website',
       'Vitz WordPress Website',
-      'Created and managed the WordPress website for this start-up business, everything from designing an appealing website to creating the online store, liaising with the CEO to gather the website requirements and adding new features when required and testing them before launch. Also responsible for some of the web graphics displayed using PhotoShop and Canva.',
+      'Created and managed the WordPress website for a start-up business, everything from designing an appealing website to creating the online store, liaising with the CEO to gather the website requirements and adding new features when required and testing them before launch. Also responsible for some of the web graphics displayed using PhotoShop and Canva.',
       ['WordPress', 'CSS', 'Photoshop'],
       [
         '/assets/VitzWebsite/vitz-1.png',
@@ -178,7 +178,7 @@ export class PortfolioService {
     new Project(
       'ar-maths-android-app',
       'AR Maths Android App',
-      'An android mathematics application with a target user age of 6 to 12 years old, aimed to educate the user through interaction and viewing of digital media using Augmented Reality technology. Features included a dynamic AR leaderboard based on the classroom/group the user was a part of allowing them to compete for domination and an AR quiz which required user responses through the camera to answer questions. This application has an android UI with Unity activities which send and receive data from each other to dynamically store points and other user information.',
+      'An android mathematics application with a target user age of 6 to 12 years old, aimed to educate the user through interaction and viewing of digital media using Augmented Reality technology. This was created for my Final Year Project at University. Features included a dynamic AR leaderboard based on the classroom/group the user was a part of allowing them to compete for domination and an AR quiz which required user responses through the camera to answer questions. This application has an android UI with Unity activities which send and receive data from each other to dynamically store points and other user information. Documentation can be found at the GitHub repository.',
       [
         'Android Studio',
         'C#',
@@ -227,7 +227,7 @@ export class PortfolioService {
     new Project(
       'jquery-treasure-hunt',
       'jQuery Treasure Hunt App',
-      'A treasure hunt jQuery based web application that provided information and promoted a clients venues, the user would choose a start destination and a final venue destination and based on their options, a GPS route would be shown with markers throughout their trip where they played games in order to learn more about the venue and earn rewards for them whilst they travel to the location. Features included a booking system, a points system, a newsletter and a dynamic favourite venues list.',
+      'A treasure hunt jQuery based web application that provided information and promoted a clients venue, the user would choose a start destination and a final venue destination and based on their options, a GPS route would be shown with markers throughout their trip where they played games in order to learn more about the venue and earn rewards for them whilst they travel to the location. Features included a booking system, a points system, a newsletter and a dynamic favourite venues list.',
       [
         'PHP',
         'Rest API',
