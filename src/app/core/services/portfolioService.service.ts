@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 import { Project } from 'src/app/shared/portfolio-item/project.model';
 
 @Injectable()
@@ -273,6 +274,6 @@ export class PortfolioService {
     var project = this.projects.find((s) => {
       return s.projectSlug === id;
     });
-    return project as Project;
+    return of(project as Project);
   }
 }

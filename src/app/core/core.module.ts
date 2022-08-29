@@ -26,6 +26,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioService } from './services/portfolioService.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -56,6 +57,7 @@ import { PortfolioService } from './services/portfolioService.service';
     PortfolioDetailComponent,
     ResumeComponent,
     HomeComponent,
+    NotFoundComponent,
   ],
   exports: [
     AboutMeComponent,
@@ -64,6 +66,7 @@ import { PortfolioService } from './services/portfolioService.service';
     PortfolioDetailComponent,
     ResumeComponent,
     HomeComponent,
+    NotFoundComponent,
   ],
   providers: [PortfolioService],
 })

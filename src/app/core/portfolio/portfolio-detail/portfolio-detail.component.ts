@@ -16,20 +16,30 @@ export class PortfolioDetailComponent implements OnInit {
   projectCredentials: Credentials = { user: '', password: '' };
   constructor(
     private _route: ActivatedRoute,
-    private _portfolioService: PortfolioService
+    private _portfolioService: PortfolioService,
+    private _router: Router
   ) {}
 
   ngOnInit() {
     this._route.params.subscribe((params) => {
       this.projectId = params['id'];
-      this.project = this._portfolioService.getPortfolioItem(this.projectId);
-      this.projectImages.push(this.project.projectImages);
-      this.projectCredentials = {
-        user: this.project.projectCredentials!.user,
-        password: this.project.projectCredentials!.password,
-      };
-      console.log(this.project);
     });
+    this._portfolioService
+      .getPortfolioItem(this.projectId)
+      .subscribe((project) => {
+        console.log(project);
+
+        if (project != undefined) {
+          this.project = project;
+          this.projectImages.push(project.projectImages);
+          this.projectCredentials = {
+            user: project.projectCredentials!.user,
+            password: project.projectCredentials!.password,
+          };
+        } else {
+          this._router.navigate(['/404']);
+        }
+      });
   }
 
   openLiveWebsite() {
