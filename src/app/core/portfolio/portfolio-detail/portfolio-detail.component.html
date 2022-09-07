@@ -61,7 +61,9 @@
 
 <p-tabView>
   <p-tabPanel header="About Project">
-    {{ project.projectDescription }}
+    <div class="content">
+      {{ project.projectDescription }}
+    </div>
   </p-tabPanel>
   <p-tabPanel header="Technologies Used">
     <p-chip
